@@ -16,7 +16,7 @@ st.write("""
 """)
 
 # Input text widgit
-stock = st.radio("The current stock ticker is:", ('AMZN', 'AAL', 'BAC'))
+stock = st.radio("The current stock ticker is:", ('AMZN', 'AAL', 'BAC', 'META'))
 
 
 # http://towardsdatascience.com/how-to-get-stick-data-using-python-c0de1df17e75
@@ -28,7 +28,7 @@ tickerSymbol=stock
 tickerData = yf.Ticker(tickerSymbol)
 
 # get the historical proces for this ticker
-tickerDf = tickerData.history(period='1d', start='2010-5-31', end='2020-5-31')
+tickerDf = tickerData.history(period='1d', start='2010-5-31', end='2032-7-31')
 
 # Open High Low Close Volume Dividents Stock Splits
 
