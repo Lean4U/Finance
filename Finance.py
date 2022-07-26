@@ -11,14 +11,18 @@ import pandas as pd
 st.write("""
 # Simple Stock Price App
 
-Shown are the stock closing price and volume of Amazon!
+## Shown are the stock closing price and volume of Amazon!
 
 """)
+
+# Input text widgit
+stock = st.radio("The current stock ticker is:", ('AMZN', 'AAL', 'BAC'))
+
 
 # http://towardsdatascience.com/how-to-get-stick-data-using-python-c0de1df17e75
 # define the ticker symbol
 
-tickerSymbol = 'AMZN'
+tickerSymbol=stock
 
 # get data on this ticker
 tickerData = yf.Ticker(tickerSymbol)
