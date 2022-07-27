@@ -11,12 +11,12 @@ import pandas as pd
 st.write("""
 # Simple Stock Price App
 
-## Shown are the stock closing price and volume of Amazon!
+## Shown are my top-5 stock closing price and volume!
 
 """)
 
 # Input text widgit
-stock = st.radio("The current stock ticker is:", ('AMZN', 'AAL', 'BAC', 'META'))
+stock = st.radio("The current stock ticker is:", ('AMZN', 'AAL', 'TSLA', 'META', 'JPM'))
 
 
 # http://towardsdatascience.com/how-to-get-stick-data-using-python-c0de1df17e75
